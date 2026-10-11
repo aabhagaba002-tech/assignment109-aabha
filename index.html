@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BPT-109 Assignment-1 | Aabha</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--ink:#1c2340;--mut:#5b6486;--accent:#c0282d;--blue:#1f3a93;--line:#d8deee;--hl:#fff3a3;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1426;--card:#171d36;--ink:#e8ecfa;--mut:#9aa5cc;--accent:#ff7b80;--blue:#9db4ff;--line:#2b3458;--hl:#5a4d00;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+header{background:var(--blue);color:#fff;padding:calc(36px + env(safe-area-inset-top)) 20px 30px;text-align:center}
+@media(prefers-color-scheme:dark){header{background:#1b2650;color:#e8ecfa}}
+header h1{font:700 clamp(34px,7vw,56px)/1.1 Caveat,cursive;margin:0 0 8px}
+header p{margin:4px 0;opacity:.92}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.chips span{background:rgba(255,255,255,.16);border-radius:20px;padding:3px 14px;font-size:15px}
+nav{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:8px 12px;justify-content:center}
+nav a{flex:none;text-decoration:none;color:var(--blue);font-weight:600;padding:4px 14px;border-radius:16px;border:1px solid var(--line)}
+nav a:hover,nav a:focus-visible{background:var(--blue);color:var(--card);outline:none}
+main{max-width:860px;margin:0 auto;padding:20px 14px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 20px}
+.qh{display:flex;gap:10px;align-items:center;margin-bottom:4px}
+.num{font:700 28px Caveat,cursive;color:#fff;background:var(--accent);border-radius:10px;padding:0 12px;line-height:36px}
+@media(prefers-color-scheme:dark){.num{color:#0f1426}}
+.bl,.tag{font-size:14px;color:var(--mut);border:1px solid var(--line);border-radius:14px;padding:1px 10px}
+.card h2{font-size:20px;line-height:1.35;margin:6px 0 12px}
+h3{font:700 24px Caveat,cursive;color:var(--accent);margin:14px 0 4px}
+ul,ol{padding-left:24px;margin:6px 0}li{margin:4px 0}p{margin:8px 0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.5;margin:8px 0}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:rgba(120,140,220,.14)}
+.concl{border-left:4px solid var(--accent);padding:6px 12px;background:rgba(120,140,220,.08);border-radius:0 8px 8px 0}
+.hl{background:var(--hl);padding:0 3px}
+svg{max-width:100%;height:auto;display:block;margin:10px auto;color:var(--blue)}
+svg text{fill:currentColor;font-family:Caveat,cursive}
+footer{text-align:center;color:var(--mut);padding:10px 14px calc(30px + env(safe-area-inset-bottom));font-size:15px}
+#top{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));background:var(--accent);color:#fff;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;text-decoration:none;font-size:20px}
+@media print{nav,#top{display:none}body{background:#fff}.card{break-inside:avoid-page}}
+</style></head><body>
+<header id="home"><h1>BPT-109 Assignment 1</h1>
+<p>Introduction to Computer &amp; Input/Output Devices (Units 1 and 2)</p>
+<div class="chips"><span>Name: Aabha</span><span>Roll No: 1826001</span><span>Submission: 13 Oct 2026</span></div></header>
+<nav aria-label="Questions"><a href="#q1">Q1</a><a href="#q2">Q2</a><a href="#q3">Q3</a><a href="#q4">Q4</a><a href="#q5">Q5</a><a href="#q6">Q6</a><a href="#q7">Q7</a><a href="#q8">Q8</a></nav>
+<main>
+<section class="card" id="q1"><div class="qh"><span class="num">Q1</span><span class="bl">Remembering</span></div><h2>List four characteristics of a modern digital computer and identify the key hardware technology of the five generations.</h2>
+<h3>Characteristics</h3>
+<ol>
+<li><b>Speed</b> &ndash; executes billions of instructions per second (GHz clock, MIPS/FLOPS).</li>
+<li><b>Accuracy</b> &ndash; errors come only from wrong input or program (GIGO), not from the machine.</li>
+<li><b>Storage</b> &ndash; holds huge data and programs in memory and secondary storage, recalled instantly.</li>
+<li><b>Automation / Diligence</b> &ndash; once a program is loaded it runs without human help and never tires.</li>
+</ol>
+<p>(Others: versatility, connectivity, no IQ.)</p>
+<h3>Generations</h3>
+<div class="wrap"><table>
+<tr><th>Gen</th><th>Period</th><th>Key hardware</th><th>Example</th></tr>
+<tr><td>1st</td><td>1940&ndash;56</td><td>Vacuum tubes</td><td>ENIAC, UNIVAC</td></tr>
+<tr><td>2nd</td><td>1956&ndash;63</td><td>Transistors</td><td>IBM 1401, 7094</td></tr>
+<tr><td>3rd</td><td>1964&ndash;71</td><td>Integrated Circuits (IC)</td><td>IBM 360</td></tr>
+<tr><td>4th</td><td>1971&ndash;present</td><td>Microprocessors (LSI/VLSI)</td><td>Intel 4004, PCs</td></tr>
+<tr><td>5th</td><td>Present &amp; beyond</td><td>ULSI, AI, parallel processing, quantum (emerging)</td><td>AI systems, smart assistants</td></tr>
+</table></div>
+
+</section>
+<section class="card" id="q2"><div class="qh"><span class="num">Q2</span><span class="bl">Understanding</span></div><h2>Explain the flow of data, instructions and control signals in the functional block diagram.</h2>
+<svg viewBox="0 0 640 300" role="img" aria-label="Computer block diagram">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="currentColor"/></marker></defs>
+<g fill="none" stroke="currentColor" stroke-width="2">
+<rect x="10" y="100" width="110" height="60" rx="8"/><rect x="520" y="100" width="110" height="60" rx="8"/>
+<rect x="180" y="20" width="280" height="250" rx="10" stroke-dasharray="6 4"/>
+<rect x="200" y="50" width="110" height="60" rx="8"/><rect x="330" y="50" width="110" height="60" rx="8"/>
+<rect x="200" y="170" width="240" height="60" rx="8"/>
+<path d="M120 130H200" marker-end="url(#a)"/><path d="M440 130H520" marker-end="url(#a)"/>
+<path d="M310 80H330" marker-end="url(#a)"/><path d="M330 90H310" marker-end="url(#a)"/>
+<path d="M255 110V170" marker-end="url(#a)"/><path d="M385 110V170" marker-end="url(#a)"/><path d="M385 170V110" marker-end="url(#a)"/>
+<path d="M120 150C150 200 150 200 200 200" stroke="#c0282d" stroke-dasharray="4 3"/>
+</g>
+<text x="30" y="135" font-size="22">INPUT</text><text x="535" y="135" font-size="22">OUTPUT</text>
+<text x="222" y="86" font-size="22">CONTROL</text><text x="352" y="86" font-size="22">ALU</text>
+<text x="215" y="206" font-size="21">MEMORY (Main + Secondary)</text>
+<text x="215" y="40" font-size="22">CPU</text><text x="262" y="262" font-size="17">(CPU + Memory = processing)</text>
+</svg>
+<ul>
+<li><b>Data flow:</b> Input devices convert user data to binary and send it to memory. The ALU fetches operands from memory, processes them, and stores results back; results then go to output devices.</li>
+<li><b>Instruction flow:</b> The program is loaded into memory. The control unit <i>fetches</i> each instruction (using Program Counter &amp; Instruction Register), <i>decodes</i> it, and <i>executes</i> it &ndash; the fetch&ndash;decode&ndash;execute cycle.</li>
+<li><b>Control signals:</b> The control unit issues timing and control signals (read/write, enable, clock) to ALU, memory and I/O interface so every part works in the right order. It does not process data itself &ndash; it only directs.</li>
+<li><b>Interaction:</b> CPU &harr; memory over address, data and control buses; the I/O interface matches the speed and format of slow peripherals to the fast CPU (buffers, ports, interrupts).</li>
+</ul>
+
+</section>
+<section class="card" id="q3"><div class="qh"><span class="num">Q3</span><span class="bl">Applying</span></div><h2>Demonstrate deployment of optical scanners and card readers on a campus.</h2>
+<h3>A) Student attendance</h3>
+<ol>
+<li>Each student gets an ID card with a <b>RFID chip</b> (and a barcode as a backup).</li>
+<li>An RFID reader is fixed at each classroom door. The student taps the card; the reader captures the unique ID.</li>
+<li>The reader sends the ID, time and room to the campus server, which matches it with the timetable and marks the student <i>Present / Late</i>.</li>
+<li><b>OMR scanner</b> reads fill-in-the-bubble sheets for MCQ tests and manual attendance sheets, and stores scores in the database automatically.</li>
+<li>Reports go to teachers and parents; absentee alerts can be sent by SMS.</li>
+</ol>
+<h3>B) Library checkout</h3>
+<ol>
+<li>Every book has a <b>barcode</b> (or RFID tag); every member has a <b>smart card</b>.</li>
+<li>At the counter / self-service kiosk, the student taps the smart card, then a <b>barcode scanner</b> reads each book.</li>
+<li>The library software verifies membership and fines, records issue date and due date, and updates stock.</li>
+<li>On return, scanning the book clears the record. An RFID gate at the exit alarms if an un-issued book passes.</li>
+</ol>
+<p class="concl"><b>Benefits:</b> faster than manual registers, no proxy attendance, fewer errors, instant reports, theft control, less staff workload.</p>
+
+</section>
+<section class="card" id="q4"><div class="qh"><span class="num">Q4</span><span class="bl">Analyzing</span></div><h2>Distinguish low-level and high-level languages.</h2>
+<div class="wrap"><table>
+<tr><th>Basis</th><th>Low-level (Machine &amp; Assembly)</th><th>High-level (C, Java, Python)</th></tr>
+<tr><td>Execution speed</td><td>Very fast; close to hardware, little overhead</td><td>Generally slower (translation, abstraction), though good compilers narrow the gap</td></tr>
+<tr><td>Hardware dependence</td><td>Machine dependent; code written for one CPU will not run on another</td><td>Machine independent / portable</td></tr>
+<tr><td>Translation</td><td>Machine code needs none; assembly needs an <b>assembler</b></td><td>Needs a <b>compiler</b> or <b>interpreter</b></td></tr>
+<tr><td>Complexity</td><td>Hard: binary/mnemonics, manual memory and register handling, error-prone, long programs</td><td>Easy: English-like syntax, short code, easy to debug and maintain</td></tr>
+<tr><td>Use</td><td>Device drivers, embedded systems, OS kernels</td><td>Applications, web, business, data science</td></tr>
+</table></div>
+<p class="concl"><b>Conclusion:</b> low-level gives control and speed; high-level gives productivity and portability.</p>
+
+</section>
+<section class="card" id="q5"><div class="qh"><span class="num">Q5</span><span class="bl">Analyzing</span></div><h2>Compare point-and-draw devices with graphics digitizers/tablets.</h2>
+<div class="wrap"><table>
+<tr><th>Basis</th><th>Mouse / Trackball</th><th>Digitizer / Drawing tablet</th></tr>
+<tr><td>Tracking</td><td><b>Relative</b>: reports <i>movement</i> (optical sensor or rolling ball); the pointer can be lifted and repositioned</td><td><b>Absolute</b>: each point on the pad maps to one point on the screen via an electromagnetic grid; the stylus position is exact</td></tr>
+<tr><td>Pressure sensitivity</td><td>None; only click on/off</td><td>Stylus detects pressure levels (2048&ndash;8192) and often tilt, controlling line width and opacity</td></tr>
+<tr><td>Precision</td><td>Moderate; good for pointing, poor for freehand drawing</td><td>High; natural pen-like control, can trace paper drawings</td></tr>
+<tr><td>CAD</td><td>Okay for selecting menus and simple shapes</td><td>Best for tracing blueprints and entering exact coordinates</td></tr>
+<tr><td>Digital art</td><td>Awkward strokes, no brush variation</td><td>Pressure brushes, shading, calligraphy feel natural</td></tr>
+<tr><td>Cost / space</td><td>Cheap; trackball needs little desk space</td><td>Costlier; needs learning time</td></tr>
+</table></div>
+<p class="concl"><b>Conclusion:</b> mouse/trackball for general use; digitizer/tablet for accurate CAD and expressive art.</p>
+
+</section>
+<section class="card" id="q6"><div class="qh"><span class="num">Q6</span><span class="bl">Evaluating</span></div><h2>Assess: plotter vs UHD monitor + large-format printer for civil engineering blueprints.</h2>
+<div class="wrap"><table>
+<tr><th>Criterion</th><th>Drum/Flatbed plotter</th><th>UHD monitor + wide-format printer</th></tr>
+<tr><td>Line resolution</td><td>Pen draws true continuous vector lines; razor-sharp, accurate to ~0.01 mm</td><td>Raster dots (600&ndash;1200 dpi); very good, but thin lines can look stepped. A monitor shows only a screen preview</td></tr>
+<tr><td>Scalability</td><td>Vector drawings scale to A0 or longer rolls without quality loss; slow on complex drawings</td><td>Fast, handles colour, images, GIS and shading; size limited by printer width</td></tr>
+<tr><td>Cost</td><td>Pen plotters are cheap to run but slow and mechanical (wear); modern inkjet plotters are efficient</td><td>Higher setup cost; ink/toner is costly, but one machine also prints posters, reports and renders</td></tr>
+</table></div>
+<p><b>Decision:</b> <span class="hl">For pure line blueprints, a plotter is superior</span> &ndash; best accuracy, dimensional fidelity, and durable output. In practice, a modern firm should use a <b>large-format inkjet plotter</b> (the plotter and printer merged) together with a UHD monitor only for design and review. Pen/drum plotters are justified only for archival-grade line work; a UHD monitor is never the final output.</p>
+
+</section>
+<section class="card" id="q7"><div class="qh"><span class="num">Q7</span><span class="bl">Evaluating</span></div><h2>Critique facial recognition vs voice recognition as primary biometrics in noisy, public places.</h2>
+<div class="wrap"><table>
+<tr><th></th><th>Facial recognition (vision input)</th><th>Voice recognition</th></tr>
+<tr><td>Reliability</td><td>Unaffected by noise. Hurt by glare, rain, low light, angle, masks, crowds. Fixable with IR cameras</td><td>Very poor: background noise ruins speech capture; wind, crowd and distance raise false rejections</td></tr>
+<tr><td>Spoofing</td><td>Photos, videos, 3D masks; needs liveness detection</td><td>Recordings, replay, AI voice cloning/deepfakes</td></tr>
+<tr><td>Privacy</td><td>Captured passively without consent; bias across skin tones; large data-breach risk</td><td>Passphrase heard by bystanders (shoulder-surfing); changes with illness or mood</td></tr>
+<tr><td>Speed &amp; user effort</td><td>Fast, contactless</td><td>Slow; user must speak and repeat</td></tr>
+</table></div>
+<p class="concl"><b>Verdict:</b> in loud public areas, face recognition (with IR + liveness check) is more reliable; voice is unsuitable as the <i>primary</i> factor. For high security, use <b>multi-factor</b> authentication (face + card/PIN), and use voice only in quiet, private spots.</p>
+
+</section>
+<section class="card" id="q8"><div class="qh"><span class="num">Q8</span><span class="bl">Creating</span></div><h2>Design a hands-free workstation for a visually impaired user.</h2>
+<svg viewBox="0 0 640 230" role="img" aria-label="Accessible workstation design">
+<g fill="none" stroke="currentColor" stroke-width="2">
+<rect x="20" y="20" width="170" height="70" rx="8"/><rect x="235" y="20" width="170" height="70" rx="8"/><rect x="450" y="20" width="170" height="70" rx="8"/>
+<rect x="235" y="130" width="170" height="70" rx="8"/>
+<path d="M190 55H235" marker-end="url(#b)"/><path d="M405 55H450" marker-end="url(#b)"/>
+<path d="M320 90V130" marker-end="url(#b)"/><path d="M320 130V90" marker-end="url(#b)"/>
+<rect x="20" y="130" width="170" height="70" rx="8"/><rect x="450" y="130" width="170" height="70" rx="8"/>
+<path d="M190 165H235" marker-end="url(#b)"/><path d="M405 165H450" marker-end="url(#b)"/>
+</g>
+<defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="currentColor"/></marker></defs>
+<text x="42" y="50" font-size="21">Microphone</text><text x="42" y="74" font-size="18">voice commands</text>
+<text x="248" y="50" font-size="21">PC + OS</text><text x="248" y="74" font-size="18">screen reader + ASR</text>
+<text x="470" y="50" font-size="21">Speakers/Headset</text><text x="470" y="74" font-size="18">speech synthesis</text>
+<text x="252" y="160" font-size="21">Smart assistant</text><text x="252" y="184" font-size="18">AI / OCR / scripts</text>
+<text x="40" y="160" font-size="21">Tactile keyboard</text><text x="40" y="184" font-size="18">Braille / tactile keys</text>
+<text x="470" y="160" font-size="21">Braille display</text><text x="470" y="184" font-size="18">refreshable cells</text>
+</svg>
+<h3>Components</h3>
+<ul>
+<li><b>Input:</b> noise-cancelling headset <b>microphone</b> with voice recognition (dictation + commands: "open mail", "read next"); <b>tactile keyboard</b> with raised home-row markers or Braille keyboard; optional trackball with tactile buttons; <b>OCR scanner</b> that turns printed pages into speech.</li>
+<li><b>Output:</b> <b>screen reader</b> (NVDA / JAWS / VoiceOver) with text-to-speech <b>voice response synthesizer</b> reading menus, text and alerts; <b>refreshable Braille display</b> for silent reading and precise editing; audio cues and earcons for errors and confirmations.</li>
+<li><b>Integration:</b> voice recognition and the keyboard feed the operating system. The screen reader reads every focus change aloud, while the Braille display mirrors it. A smart assistant handles hands-free tasks (email, calendar, web).</li>
+<li><b>Workspace design:</b> fixed, uncluttered layout with tactile markers; cables managed; headset use for privacy; good microphone placement to avoid noise; high-contrast, large-print screen for partially sighted helpers.</li>
+<li><b>Support features:</b> keyboard shortcuts, adjustable speech speed, auto-backup, privacy mode for sensitive data.</li>
+</ul>
+<p class="concl"><b>Result:</b> the user hears feedback for every action and can work independently, accurately and with privacy.</p>
+
+</section>
+</main>
+<footer>Submitted by Aabha (Roll No. 1826001), BPT-109</footer>
+<a id="top" href="#home" aria-label="Back to top">&uarr;</a>
+</body></html>
